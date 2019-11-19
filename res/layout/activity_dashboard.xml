@@ -1,0 +1,273 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ecf0f5"
+    tools:context=".Dashboard" >
+    
+    
+    
+     <LinearLayout
+	    android:id="@+id/atas"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical"
+	    android:padding="20dp"
+	    android:layout_marginBottom="25dp"
+	   >
+        <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+	        <TextView
+	                android:id="@+id/textView1"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="Dashboard" 
+	                android:textSize="18sp"
+	                />
+		    <RelativeLayout 
+		        android:onClick="Logout"
+		      	android:layout_alignParentRight="true"
+		        android:layout_width="27dp"
+		        android:layout_height="27dp"
+		        android:background="#222">
+		        <ImageView 
+		            android:layout_width="12dp"
+		            android:layout_height="12dp"
+		            android:src="@drawable/shutdown"
+		            android:layout_centerHorizontal="true"
+		            android:layout_centerVertical="true"/>
+		    </RelativeLayout>
+    	</RelativeLayout>
+	    
+	    <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" 
+                android:background="#d2d6de"
+                android:padding="8dp">
+                
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Home > Dashboard" 
+              	android:textSize="10sp"
+                />
+        </LinearLayout>
+        
+	    <RelativeLayout
+	        android:layout_marginTop="20dp"
+                android:onClick="TampilBarang"
+                android:id="@+id/linearLayout1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="120dp" 
+                android:background="#dd4b39"
+                
+                >
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_marginTop="20dp" 
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/cllipboard"/>
+				<TextView
+				    android:layout_below="@+id/imageView1"  
+				    android:layout_marginTop="10dp"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				   android:layout_centerHorizontal="true"
+				   android:layout_centerVertical="true"
+				    android:text="Barang"
+				    android:textSize="14sp"
+				    android:textColor="#FFF"
+				    />
+                <LinearLayout
+                    android:onClick="TampilBarang"
+                    android:id="@+id/halamanBarang"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:background="#b73e2f"
+                    android:gravity="center"
+                    android:layout_alignParentBottom="true" >
+                    
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="More Info"
+                        android:textColor="#FFF"
+                        android:textSize="10sp"
+                        />
+                    <ImageView 
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="11dp"
+                        android:layout_height="11dp"
+                        android:src="@drawable/right"/>
+                </LinearLayout>
+
+         	</RelativeLayout>
+        	
+	    	<RelativeLayout
+         	     android:onClick="TampilKategori"
+         	     android:layout_below="@+id/linearLayout1"
+         	     android:id="@+id/linearLayout2"
+         	     android:layout_marginTop="20dp"
+         	     android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="120dp" 
+                android:background="#00c0ef"
+               >
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_marginTop="20dp" 
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/list"/>
+				<TextView
+				    android:layout_below="@+id/imageView2"  
+				    android:layout_marginTop="10dp"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				   android:layout_centerHorizontal="true"
+				   android:layout_centerVertical="true"
+				    android:text="Kategori Barang"
+				    android:textSize="14sp"
+				    android:textColor="#FFF"
+				    />
+         	    <LinearLayout
+         	        android:onClick="TampilKategori"
+         	        android:id="@+id/halamanKategori"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:background="#029fc6"
+                    android:gravity="center"
+                    android:layout_alignParentBottom="true" >
+                    
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="More Info"
+                        android:textColor="#FFF"
+                        android:textSize="10sp"
+                        />
+                    <ImageView 
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="11dp"
+                        android:layout_height="11dp"
+                        android:src="@drawable/right"/>
+                </LinearLayout> 
+         	    
+         	</RelativeLayout>
+         	
+	    	<RelativeLayout
+         	    android:onClick="TampilUser"
+         	     android:layout_below="@+id/linearLayout2"
+         	     android:id="@+id/linearLayout3"
+         	     android:layout_marginTop="20dp"
+         	     android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="120dp" 
+                android:background="#f39c12"
+                >
+         	    <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_marginTop="20dp" 
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/user_shield"/>
+				<TextView
+				    android:layout_below="@+id/imageView3"  
+				    android:layout_marginTop="10dp"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				   android:layout_centerHorizontal="true"
+				   android:layout_centerVertical="true"
+				    android:text="Data User"
+				    android:textSize="14sp"
+				    android:textColor="#FFF"
+				    />
+         	    <LinearLayout
+         	        android:onClick="TampilUser"
+         	        android:id="@+id/halamanTeam"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:background="#ba770c"
+                    android:gravity="center"
+                    android:layout_alignParentBottom="true" >
+                    
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="More Info"
+                        android:textColor="#FFF"
+                        android:textSize="10sp"
+                        />
+                    <ImageView 
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="11dp"
+                        android:layout_height="11dp"
+                        android:src="@drawable/right"/>
+                </LinearLayout>
+         	    
+         	</RelativeLayout>	
+	    
+         	<RelativeLayout
+         	    android:onClick="TampilTeam"
+         	     android:layout_below="@+id/linearLayout2"
+         	     android:id="@+id/linearLayout3"
+         	     android:layout_marginTop="20dp"
+         	     android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="120dp" 
+                android:background="#00a65a"
+                >
+         	    <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_marginTop="20dp" 
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/contact"/>
+				<TextView
+				    android:layout_below="@+id/imageView3"  
+				    android:layout_marginTop="10dp"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				   android:layout_centerHorizontal="true"
+				   android:layout_centerVertical="true"
+				    android:text="Anggota Kelompok"
+				    android:textSize="14sp"
+				    android:textColor="#FFF"
+				    />
+         	    <LinearLayout
+         	        android:onClick="TampilTeam"
+         	        android:id="@+id/halamanTeam"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:background="#017a43"
+                    android:gravity="center"
+                    android:layout_alignParentBottom="true" >
+                    
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="More Info"
+                        android:textColor="#FFF"
+                        android:textSize="10sp"
+                        />
+                    <ImageView 
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="11dp"
+                        android:layout_height="11dp"
+                        android:src="@drawable/right"/>
+                </LinearLayout>
+         	    
+         	</RelativeLayout>
+	   
+    </LinearLayout> 
+
+</ScrollView>

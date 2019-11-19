@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ecf0f5"
+    tools:context=".DataUser" >
+
+	<TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Data User"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp" />
+
+    <LinearLayout
+        android:id="@+id/bgmenu"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#d2d6de"
+        android:padding="8dp" >
+
+        <TextView
+            android:onClick="Dashboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dashboard >"
+            android:textSize="10sp" />
+
+        <TextView
+            android:onClick="TampilBarang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Data User"
+            android:textSize="10sp"
+            android:textColor="#777" />
+
+    </LinearLayout>
+
+   
+    
+
+     	<LinearLayout
+         android:layout_below="@+id/bgmenu"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         
+         >
+         
+         <ListView
+            android:padding="10dp"
+            android:id="@+id/listView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             >
+        </ListView>
+        
+     </LinearLayout>    
+	
+     	<ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="45dp"
+            android:layout_marginRight="35dp"
+            android:src="@drawable/plus"
+            android:id="@+id/add"
+           />
+</RelativeLayout>

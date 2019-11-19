@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#ecf0f5"
+    tools:context=".DetailKategori" >
+
+	  <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Detail Kategori"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp" />
+
+    <LinearLayout
+        android:id="@+id/bgmenu"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#d2d6de"
+        android:padding="8dp" >
+
+        <TextView
+            android:onClick="Dashboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dashboard >"
+            android:textSize="10sp" />
+
+        <TextView
+            android:onClick="TampilKategori"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Kategori >"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Detail Kategori"
+            android:textColor="#777"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <LinearLayout  
+        android:layout_marginTop="5dp" 
+         android:layout_below="@+id/bgmenu"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        >
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#00c0ef" >
+        </LinearLayout>
+        
+        <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        android:paddingTop="5dp"
+        android:paddingBottom="20dp">
+        
+        <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp" >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="ID Kategori"
+                android:textStyle="bold" />
+
+            <EditText
+              android:id="@+id/editText1"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="35dp"
+              android:background="@drawable/customedittext"
+              android:padding="5dp"
+              android:textSize="10sp"
+              android:editable="false"
+                 />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Kategori"
+                android:textStyle="bold" />
+
+            <EditText
+              android:id="@+id/editText2"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="35dp"
+              android:background="@drawable/customedittext"
+              android:padding="5dp"
+              android:textSize="10sp"
+              android:editable="false"/>
+        </TableRow> 
+    </TableLayout>
+
+    
+    </LinearLayout>
+    </LinearLayout>  
+
+</RelativeLayout>

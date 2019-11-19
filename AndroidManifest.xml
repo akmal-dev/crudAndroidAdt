@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.uasapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- Splash -->
+        <activity
+            android:name="com.example.uasapp.Splashscreen"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Main Activity -->
+        <activity
+            android:name="com.example.uasapp.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.uasapp.Dashboard"
+            android:label="@string/title_activity_dashboard" >
+        </activity>
+        <activity
+            android:name="com.example.uasapp.Barang"
+            android:label="@string/title_activity_barang" >
+        </activity>
+        <activity
+            android:name="com.example.uasapp.AddBarang"
+            android:label="@string/title_activity_add_barang" >
+        </activity>
+        <activity
+            android:name="com.example.uasapp.Edit"
+            android:label="@string/title_activity_edit" >
+        </activity>
+        <activity
+            android:name="com.example.uasapp.UpdateBarang"
+            android:label="@string/title_activity_update_barang" >
+        </activity>
+        <activity
+            android:name="com.example.uasapp.DetailBarang"
+            android:label="@string/title_activity_detail_barang" >
+        </activity>
+        <activity
+            android:name="com.example.uasapp.Kategori"
+            android:label="@string/title_activity_kategori" >
+        </activity>
+        <activity
+            android:name="com.example.uasapp.AddKategori"
+            android:label="@string/title_activity_add_kategori" >
+        </activity>
+        <activity
+            android:name="com.example.uasapp.DetailKategori"
+            android:label="@string/title_activity_detail_kategori" >
+        </activity>
+        <activity
+            android:name="com.example.uasapp.UpdateKategori"
+            android:label="@string/title_activity_update_kategori" >
+        </activity>
+        <activity
+            android:name="com.example.uasapp.Team"
+            android:label="@string/title_activity_team" >
+        </activity>
+        <activity
+            android:name="com.example.uasapp.DataUser"
+            android:label="@string/title_activity_data_user" >
+        </activity>
+        <activity
+            android:name="com.example.uasapp.AddDataUser"
+            android:label="@string/title_activity_add_data_user" >
+        </activity>
+        <activity
+            android:name="com.example.uasapp.DetailDataUser"
+            android:label="@string/title_activity_detail_data_user" >
+        </activity>
+        <activity
+            android:name="com.example.uasapp.UpdateDataUser"
+            android:label="@string/title_activity_update_data_user" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">maldira.id</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_dashboard">Dashboard</string>
+    <string name="title_activity_barang">Barang</string>
+    <string name="title_activity_add_barang">Tambah Barang</string>
+    <string name="title_activity_edit">Edit</string>
+    <string name="title_activity_splashscreen">Splashscreen</string>
+    <string name="title_activity_update_barang">Update Barang</string>
+    <string name="title_activity_detail_barang">Detail Barang</string>
+    <string name="title_activity_kategori">Kategori</string>
+    <string name="title_activity_add_kategori">Tambah Kategori</string>
+    <string name="title_activity_detail_kategori">Detail Kategori</string>
+    <string name="title_activity_update_kategori">Update Kategori</string>
+    <string name="title_activity_team">Team</string>
+    <string name="title_activity_data_user">Data User</string>
+    <string name="title_activity_add_data_user">Tambah Data User</string>
+    <string name="title_activity_detail_data_user">Detail Data User</string>
+    <string name="title_activity_update_data_user">Update Data User</string>
+
+</resources>
